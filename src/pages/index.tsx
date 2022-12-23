@@ -1,12 +1,16 @@
 import * as React from "react";
-import type { PageProps } from "gatsby";
+import { PageProps } from "gatsby";
+import Layout from "../components/Layout";
+import Seo from "../components/Seo";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <div>
-      <h1>Welcome to DevStickers </h1>
-    </div>
+    <Layout title="Welcome to DevStickers">
+      <div></div>
+    </Layout>
   );
 };
+
+export const Head = () => <Seo title="Home" />;
 
 export default IndexPage;
